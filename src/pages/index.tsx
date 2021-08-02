@@ -3,14 +3,15 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div>
+    <div className="container">
       <Head>
         <title>Tailwind Studies</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <header>
         <h1>Hello World</h1>
-      </main>
+      </header>
+      <main />
     </div>
   )
 }
