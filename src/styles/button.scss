@@ -7,17 +7,19 @@
 }
 
 .btn {
-  @apply flex justify-center items-center rounded-full btn-md font-bold bg-transparent;
+  @apply flex justify-center items-center rounded-full btn-md font-bold bg-transparent transition-all;
 
   &.btn-outline {
     @apply border-2 border-gray-200  bg-white text-gray-900;
+    @apply hover:border-gray-900 hover:shadow-sm;
   }
 
   &.btn-solid {
-    @apply font-bold bg-gray-800 text-white;
+    @apply font-bold bg-gray-900 text-white;
   }
 
   &.btn-link {
     @apply bg-transparent text-gray-500;
+    @apply hover:text-gray-900 hover:shadow-sm;
   }
 }

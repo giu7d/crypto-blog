@@ -1,7 +1,8 @@
 .article-card {
   display: grid;
   grid-template-columns: 1fr auto;
-  @apply gap-4 justify-between;
+  @apply gap-4 p-4 rounded-2xl justify-between cursor-pointer transition-all;
+  @apply hover:shadow-sm hover:bg-gray-50;
 
   & > .content {
     @apply flex flex-col;
