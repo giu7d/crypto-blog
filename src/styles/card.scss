@@ -1,0 +1,21 @@
+.card {
+  display: grid;
+  grid-template-areas: 'cover cover' 'content actions';
+  grid-template-columns: 1fr auto;
+  @apply gap-4 w-full h-auto;
+
+  & > .cover {
+    grid-area: cover;
+    @apply h-96 rounded-2xl;
+  }
+
+  & > .content {
+    grid-area: content;
+    @apply flex flex-col flex-1 gap-2;
+  }
+
+  & > .actions {
+    grid-area: actions;
+    @apply flex flex-col gap-2;
+  }
+}

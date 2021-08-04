@@ -1,0 +1,7 @@
+.header {
+  @apply flex flex-row justify-between items-start py-6;
+}
+
+.nav {
+  @apply flex flex-row gap-4 md:gap-8;
+}

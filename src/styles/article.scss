@@ -1,0 +1,13 @@
+.article-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  @apply gap-4 justify-between;
+
+  & > .content {
+    @apply flex flex-col;
+  }
+
+  & > .cover {
+    @apply h-24 w-24;
+  }
+}

@@ -1,0 +1,23 @@
+.btn-sm {
+  @apply px-3 py-1 text-sm;
+}
+
+.btn-md {
+  @apply px-4 py-2;
+}
+
+.btn {
+  @apply flex justify-center items-center rounded-full btn-md font-bold bg-transparent;
+
+  &.btn-outline {
+    @apply border-2 border-gray-200  bg-white text-gray-900;
+  }
+
+  &.btn-solid {
+    @apply font-bold bg-gray-800 text-white;
+  }
+
+  &.btn-link {
+    @apply bg-transparent text-gray-500;
+  }
+}
