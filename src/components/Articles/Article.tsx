@@ -11,7 +11,7 @@ export const Article: React.VFC<IArticleProps> = ({
   description,
   date
 }) => (
-  <div className="article-card">
+  <div className="article-card" data-cy="article">
     <div className="content">
       <small className="font-sans text-sm text-gray-400 font-bold">
         {date.toLocaleDateString('US', {

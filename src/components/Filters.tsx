@@ -20,13 +20,14 @@ export const Filters: React.FC<IFiltersProps> = ({
     selected.key === key ? 'btn-solid' : 'btn-link'
 
   return (
-    <nav className="nav">
+    <nav className="nav" data-cy="filters">
       {filters.map(el => (
         <button
           key={el.key}
           className={`btn btn-sm ${isSelected(el.key)}`}
           onClick={() => setSelected(el)}
           type="button"
+          data-cy="filter"
         >
           {el.title}
         </button>

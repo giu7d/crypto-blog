@@ -14,7 +14,7 @@ interface IArticlesProps {
 }
 
 export const Articles: React.FC<IArticlesProps> = ({ articles, filter }) => (
-  <div className="flex flex-col gap-8 h-auto w-full">
+  <div className="flex flex-col gap-8 h-auto w-full" data-cy="articles">
     {articles
       .filter(
         ({ category }) => category === filter || !filter || filter === 'all'
