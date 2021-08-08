@@ -10,17 +10,12 @@ interface IArticlesProps {
     date: Date
     category: string
   }[]
-  filter?: string
 }
 
-export const Articles: React.FC<IArticlesProps> = ({ articles, filter }) => (
+export const Articles: React.FC<IArticlesProps> = ({ articles }) => (
   <div className="flex flex-col gap-8 h-auto w-full" data-cy="articles">
-    {articles
-      .filter(
-        ({ category }) => category === filter || !filter || filter === 'all'
-      )
-      .map(el => (
-        <Article key={el.id} {...el} />
-      ))}
+    {articles.map(el => (
+      <Article key={el.id} {...el} />
+    ))}
   </div>
 )

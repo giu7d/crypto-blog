@@ -22,14 +22,8 @@ const articles = [
 
 describe('Articles component', () => {
   it('should load articles', () => {
-    mount(<Articles articles={articles} filter="all" />)
+    mount(<Articles articles={articles} />)
       .then(() => cy.get('[data-cy=article]'))
       .should('have.length', articles.length)
-  })
-
-  it('should load only articles with same category', () => {
-    mount(<Articles articles={articles} filter="category" />)
-      .then(() => cy.get('[data-cy=article]'))
-      .should('have.length', 1)
   })
 })
