@@ -3,7 +3,7 @@ on: [push]
 jobs:
   test:
     runs-on: ubuntu-20.04
-    name: Cypress Components
+    name: Cypress
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -11,9 +11,15 @@ jobs:
         with:
           node-version: '14'
       - uses: bahmutov/npm-install@v1
-      - name: Cypress run
+      - name: Cypress Components
         uses: cypress-io/github-action@v2
         with:
           browser: chrome
           headless: true
           command: yarn cypress run-ct
+      - name: Cypress Integration
+        uses: cypress-io/github-action@v2
+        with:
+          headless: true
+          start: yarn start
+          command: yarn cypress run
