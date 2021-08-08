@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "test:components": "cypress open-ct",
-    "test:components:headless": "cypress run-ct"
+    "test:components:headless": "cypress run-ct",
+    "test:integration": "cypress open",
+    "test:integration:headless": "cypress run"
   },
   "dependencies": {
     "next": "11.0.1",
