@@ -1,0 +1,28 @@
+.highlight {
+  @apply flex flex-row rounded-3xl overflow-visible justify-between;
+  @apply bg-gradient-to-br from-green-300 to-green-100 text-white;
+
+  .highlight-context {
+    @apply p-6;
+
+    h2 {
+      @apply text-3xl font-bold font-serif uppercase;
+    }
+
+    h3 {
+      @apply text-lg font-semibold italic font-serif capitalize;
+    }
+
+    h4 {
+      @apply text-6xl font-bold;
+
+      span {
+        @apply text-3xl font-semibold;
+      }
+    }
+  }
+
+  .highlight-image {
+    @apply transform translate-y-6 scale-125;
+  }
+}

@@ -1,0 +1,15 @@
+.card {
+  @apply flex flex-col rounded-3xl overflow-hidden;
+
+  .card-cover {
+    @apply flex items-center justify-center p-6;
+  }
+
+  .card-content {
+    @apply p-6;
+  }
+
+  .card-actions {
+    @apply flex flex-row p-6 pt-0 gap-6 justify-end;
+  }
+}

@@ -1,0 +1,28 @@
+.btn {
+  @apply flex flex-shrink-0 justify-center items-center rounded-full font-bold bg-transparent transition-all hover:opacity-50;
+  @apply text-sm font-semibold;
+}
+
+.btn.btn-sm {
+  @apply px-4 py-2;
+}
+
+.btn.btn-md {
+  @apply px-6 py-2 gap-2;
+}
+
+.btn.btn-icon {
+  @apply w-10 h-10;
+}
+
+.btn.btn-outline {
+  @apply border border-gray-100 text-gray-500;
+}
+
+.btn.btn-solid {
+  @apply bg-gray-800 text-white;
+}
+
+.btn.btn-primary {
+  @apply bg-red-50 text-red-400;
+}

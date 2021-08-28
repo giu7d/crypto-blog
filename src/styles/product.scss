@@ -1,0 +1,27 @@
+.product-card-content {
+  @apply flex flex-row items-center justify-between text-gray-800;
+
+  .product-brand {
+    @apply font-semibold uppercase text-gray-500;
+  }
+
+  .product-name {
+    @apply font-semibold uppercase;
+  }
+
+  .product-price {
+    @apply flex flex-row;
+
+    small {
+      @apply text-xl;
+    }
+
+    h5 {
+      @apply text-3xl font-bold;
+    }
+
+    span {
+      @apply text-lg;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.search-input {
+  @apply flex flex-row flex-1 items-center gap-4 py-2 px-4 rounded-full;
+  @apply bg-gray-100 text-gray-800;
+  @apply focus-within:outline-none focus-within:ring;
+
+  input {
+    @apply bg-transparent placeholder-gray-500 focus:outline-none focus:ring-0 w-20;
+  }
+}
