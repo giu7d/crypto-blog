@@ -1,16 +1,12 @@
 {
-  "name": "tailwind-studies",
+  "name": "commerce-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test:components": "cypress open-ct",
-    "test:components:headless": "cypress run-ct",
-    "test:integration": "cypress open",
-    "test:integration:headless": "cypress run"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "11.0.1",
@@ -20,18 +16,13 @@
     "tailwindcss": "^2.2.7"
   },
   "devDependencies": {
-    "@cypress/react": "^5.9.3",
-    "@cypress/webpack-dev-server": "^1.4.0",
-    "@testing-library/cypress": "^8.0.0",
     "@types/react": "17.0.15",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "autoprefixer": "^10.3.1",
-    "cypress": "^8.2.0",
     "eslint": "7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-next": "11.0.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-prettier": "^3.4.0",
     "html-webpack-plugin": "^5.3.2",
     "postcss": "^8.3.6",
