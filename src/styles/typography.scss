@@ -1,0 +1,26 @@
+.price {
+  @apply flex flex-row;
+
+  small {
+    @apply text-xl;
+  }
+
+  h5 {
+    @apply text-3xl font-bold;
+  }
+
+  span {
+    @apply text-lg;
+  }
+}
+
+.price-sm {
+  small,
+  span {
+    @apply text-base;
+  }
+
+  h5 {
+    @apply text-xl;
+  }
+}

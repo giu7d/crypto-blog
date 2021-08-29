@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
-import { Filter } from '@/components/containers/Filter'
+import { FilterProducts } from '@/components/containers/Products/Filter'
 import { Header } from '@/components/containers/Header'
 import { OffersSection } from '@/components/fragments/sections/OffersSection'
-import { Products } from '@/components/containers/Products'
+import { ListProducts } from '@/components/containers/Products/List'
 
 export default function Home() {
   return (
@@ -19,8 +19,8 @@ export default function Home() {
           productImage="/images/apple-watch.png"
           off={15}
         />
-        <Filter />
-        <Products />
+        <FilterProducts />
+        <ListProducts />
       </main>
     </div>
   )

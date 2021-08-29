@@ -23,6 +23,14 @@
   @apply bg-gray-800 text-white;
 }
 
+.btn.btn-solid.btn-primary {
+  @apply bg-red-400 text-white;
+}
+
 .btn.btn-primary {
   @apply bg-red-50 text-red-400;
+}
+
+.btn.btn-number {
+  @apply hover:opacity-100 bg-gray-700 text-white;
 }
